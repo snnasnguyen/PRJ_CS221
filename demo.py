@@ -4,8 +4,8 @@ from openai import OpenAI
 import google.generativeai as genai
 from transformers import AutoModelForQuestionAnswering, AutoTokenizer, pipeline
 
-client = OpenAI(api_key="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")
-os.environ["GOOGLE_API_KEY"] = "AIzaSyBwRi6f7aoxXxpwy5RhOThn0cOOV9_zI50"
+client = OpenAI(api_key="Your API")
+os.environ["GOOGLE_API_KEY"] = "Your API"
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 gemini_model = genai.GenerativeModel("models/gemini-1.5-pro")
 
